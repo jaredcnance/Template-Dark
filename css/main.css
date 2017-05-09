@@ -1,5 +1,7 @@
 body {
-    font-size: 19px;
+    font-size: 16px;
+    color: #000;
+    background-color: #FFFFFF;
 }
 
 main {
@@ -63,6 +65,31 @@ header.navbar {
     margin-top: 0;
 }
 
+nav#sidebar {
+    max-height: calc(100% - 100px);
+    overflow-y: scroll;
+}
+
+.nav-pills>li>a {
+    color: #000;
+}
+
+.nav>li>a {
+    transition: 0.2s;
+    border-left: 2px solid #FFFFFF;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    border-left: 2px solid #df691a;
+    background-color: #FFF;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #ffffff;
+    background-color: #df691a;
+    border-left: 2px solid #df691a;
+}
+
 #sidebar .github-star {
     margin-top: 20px;
     margin-left: 50px;
@@ -89,9 +116,8 @@ code {
     padding: 4px 4px 1px;
     margin: 0 4px;
     border-radius: 3px;
-    color: #c5c8c6;
-    border: solid 1px #3D5166;
-    background-color: #1D2B3A;
+    color: #000;
+    background-color: #FFF;
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
     word-wrap: break-word;
